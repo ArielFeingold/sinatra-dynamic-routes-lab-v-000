@@ -1,8 +1,9 @@
-<%= if @operation == 'add' %>
+<% if @operation == 'add' %>
   <%= "#{@number1.to_i + @number2.to_i}" %>
-<%= if @operation == 'subtract' %>
+<% elsif @operation == 'subtract' %>
   <%= "#{@number1.to_i - @number2.to_i}" %>
-<%= if @operation == 'multiply' %>
+<% elsif @operation == 'multiply' %>
   <%= "#{@number1.to_i * @number2.to_i}" %>
-<%= if @operation == 'divide' %>
+<% elsif @operation == 'divide' %>
   <%= "#{@number1.to_i / @number2.to_i}" %>
+  <% end %>
