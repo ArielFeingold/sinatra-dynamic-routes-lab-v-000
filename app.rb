@@ -33,7 +33,7 @@ class App < Sinatra::Base
     @operation = params[:operation]
     @number1 = params[:number1]
     @number2 = params[:number2]
-    binding.pry
+    # binding.pry
     erb :cal
   end
 
